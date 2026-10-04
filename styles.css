@@ -346,6 +346,19 @@ figcaption {
     
     .header-container {
         flex-direction: column;
+        gap: 0.8rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .logo {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .nav-links {
+        white-space: normal;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1rem;
     }
     
@@ -366,9 +379,15 @@ figcaption {
     }
     
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
+        gap: 0.8rem;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+    
+    .finding-card {
+        padding: 1rem;
     }
 }
 
@@ -500,13 +519,20 @@ figcaption {
         flex-direction: column;
     }
     .lightbox-img-container {
-        flex: 1;
+        flex: none;
+        height: 40%;
+        min-height: 250px;
         padding: 1rem;
     }
     .lightbox-details-container {
         border-left: none;
         border-top: 1px solid var(--border-light);
-        padding: 2rem;
+        padding: 1.5rem;
+        flex: 1;
+    }
+    .lightbox-nav {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
     }
 }
 
