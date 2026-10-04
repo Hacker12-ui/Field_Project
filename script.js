@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealOptions = {
-        threshold: 0.1, // Trigger when 10% of the element is visible
-        rootMargin: "0px 0px -20px 0px"
+        threshold: 0, // Trigger as soon as the element enters the viewport
+        rootMargin: "0px 0px 100px 0px" // Trigger 100px before it even enters
     };
 
     const revealOnScroll = new IntersectionObserver(function(

@@ -330,6 +330,14 @@ figcaption {
     transform: translateY(0);
 }
 
+@media (max-width: 900px) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .report-document {
